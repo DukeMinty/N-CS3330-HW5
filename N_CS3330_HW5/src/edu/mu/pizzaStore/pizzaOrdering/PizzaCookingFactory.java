@@ -8,21 +8,17 @@ import edu.mu.pizzaStore.pizzaTypes.VegetarianPizza;
 
 public class PizzaCookingFactory {
 
-	static int orderIDcounter = 0;
-	public AbstractPizza createPizza(PizzaType pizzaType) {
-	        AbstractPizza pizza = null;
+	public static AbstractPizza createPizza(PizzaType pizzaType) {
 	        if(pizzaType.equals(PizzaType.HAWAIIAN)) {
-	        	pizza = new HawaiianPizza();
+	        	return new HawaiianPizza();
 	        }else if(pizzaType.equals(PizzaType.MARGHERITA)) {
-	        	pizza = new MargheritaPizza();
+	        	return new MargheritaPizza();
 	        } else if(pizzaType.equals(PizzaType.SUPREME)) {
-	        	pizza = new SupremePizza();
+	        	return new SupremePizza();
 	        }else if(pizzaType.equals(PizzaType.VEGETARIAN)) {
-	        	pizza = new VegetarianPizza();
+	        	return new VegetarianPizza();
 	        }
-			orderIDcounter ++;
-			pizza.setPizzaOrderID(orderIDcounter);
-			return pizza;
+			return null;
 	 }
 	
 }

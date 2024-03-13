@@ -37,6 +37,10 @@ public class SupremePizza extends AbstractPizza{
 	public SupremePizza(SupremePizza original) {
 		super(original);
 	}
+	
+	public SupremePizza(AbstractPizza original) {
+		super(original);
+	}
 
 	public void callAddToppingsToPrice(double priceWithoutToppings) {
 		super.addToppingsToPrice(priceWithoutToppings);

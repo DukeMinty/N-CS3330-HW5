@@ -35,6 +35,10 @@ public class MargheritaPizza extends AbstractPizza{
 	public MargheritaPizza(MargheritaPizza original) {
 		super(original);
 	}
+	
+	public MargheritaPizza(AbstractPizza original) {
+		super(original);
+	}
 
 	public void callAddToppingsToPrice(double priceWithoutToppings) {
 		super.addToppingsToPrice(priceWithoutToppings);

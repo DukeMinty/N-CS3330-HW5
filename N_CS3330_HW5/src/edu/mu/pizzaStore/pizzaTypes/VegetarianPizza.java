@@ -37,6 +37,11 @@ public class VegetarianPizza extends AbstractPizza{
 	public VegetarianPizza(VegetarianPizza original) {
 		super(original);
 	}
+	
+	public VegetarianPizza(AbstractPizza original) {
+		super(original);
+	}
+
 
 	public void callAddToppingsToPrice(double priceWithoutToppings) {
 		super.addToppingsToPrice(priceWithoutToppings);

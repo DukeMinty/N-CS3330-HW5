@@ -33,6 +33,10 @@ public class HawaiianPizza extends AbstractPizza{
 	public HawaiianPizza(HawaiianPizza original) {
 		super(original);
 	}
+	
+	public HawaiianPizza(AbstractPizza original) {
+		super(original);
+	}
 
 	public void callAddToppingsToPrice(double priceWithoutToppings) {
 		super.addToppingsToPrice(priceWithoutToppings);
