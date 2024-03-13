@@ -1,3 +1,5 @@
+This program runs on Java 21!!!!! Cloning it to an IDE that is Java 20 or lower will cause errors!!
+
 The way at which to run the file is through first hitting the run button to which you will be giving an input statement to create a new Pizza using 1 or 2 for Quitting. 
 By clicking 1 you then will be prompted with creating a pizza and which type 1-4 for each type of pizza. 
 Once clicking the pizza you want you will then pick which way you will like the pizza cooked which you input 1,2,or 3 based on the parallel cooking type. 
